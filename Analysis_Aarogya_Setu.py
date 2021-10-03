@@ -149,7 +149,7 @@ model.add(LSTM(128))
 model.add(Dense(1, activation='sigmoid'))
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['acc'])
 
-history = model.fit(x_train, y_train, batch_size=128, epochs=2, verbose=1, validation_split=0.2)
+history = model.fit(x_train, y_train, batch_size=128, epochs=4, verbose=1, validation_split=0.2)
 print("************************************************************************************************************************************************************************")
 for i in range(0,n):
     x_test=data[i]
